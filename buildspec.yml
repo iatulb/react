@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands: 
+      #install NPM
+      - echo installing npm libraries
+      - npm install
+      - npm install react-scripts --save
+  build:
+    commands:
+      - echo building react app
+      - npm run build
+artifacts:
+  files:
+    - /**/*
