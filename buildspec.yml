@@ -11,6 +11,7 @@ phases:
       - npm install react-scripts --save
   build:
     commands:
+      # buidling react build
       - echo building react app
       - npm run build
 artifacts:
